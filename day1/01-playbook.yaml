@@ -4,3 +4,6 @@
   tasks: 
   - name: ping the server
     ping: 
+  - name: print the message
+    debug:
+      msg: 
