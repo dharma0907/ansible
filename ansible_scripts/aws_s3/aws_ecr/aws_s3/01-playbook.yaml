@@ -1,0 +1,6 @@
+- name: ping the server
+  hosts: frontend # nothing but target server
+  gather_facts: no
+  tasks: 
+  - name: ping the server
+    ping: 

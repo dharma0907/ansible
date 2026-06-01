@@ -1,0 +1,8 @@
+- name: "dharma"
+  email: ""
+  phone: ""
+  rollno: ""
+  address:
+  - name: satyarth
+    email: ""
+    phone: ""
