@@ -1,0 +1,14 @@
+- name: demo on variables
+  hosts: frontend
+  gather_facts: no
+  vars:
+    name: "dharma"
+    address: "satya nagar, bhubaneswar"
+
+  tasks:
+  - name: print the message
+    debug:
+      msg: "Hello, my name is {{ name }}"
+  - name: print the address
+    debug:
+      msg: "My address is {{ address }}"
