@@ -1,0 +1,16 @@
+- name: ping the server
+  hosts: frontend # nothing but target server
+  gather_facts: no
+  tasks: 
+
+  #now we will try to install install nginx on the server
+  - name: install nginx
+    dnf:
+      name: nginx
+      state: present
+    become: yes # to run the command as root user
+  - name: start nginx
+    service:
+      name: nginx
+      state: started
+    become: yes
