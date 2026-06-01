@@ -14,3 +14,12 @@
       name: nginx
       state: started
     become: yes
+  - name: print the message
+    debug:
+      msg: "nginx is installed and started successfully"
+  - name: check nginx status
+    service:
+      name: nginx
+      state: started
+    register: nginx_status
+    become: yes
