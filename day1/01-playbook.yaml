@@ -6,4 +6,4 @@
     ping: 
   - name: print the message
     debug:
-      msg: "hello world from ansible"
+    msg: "hello world from ansible"
