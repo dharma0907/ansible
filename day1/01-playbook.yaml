@@ -6,4 +6,16 @@
     ping: 
   - name: print the message
     debug:
-    msg: "hello world from ansible"
+      msg: "hello world from ansible"
+  
+  #now we will try to install install nginx on the server
+  - name: install nginx
+    dnf:
+      name: nginx
+      state: present
+    become: yes # to run the command as root user
+  - name: start nginx
+    service:
+      name: nginx
+      state: started
+    become: yes
