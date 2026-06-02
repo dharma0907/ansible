@@ -12,6 +12,9 @@
   tasks:
   - name: print preference of variables
     vars:
-      name: "ansible from play level variable"
+      name: "ansible from task level variable"
     debug:
       msg: "The name is {{ name }}"
+
+# first preference command line args
+# second task
