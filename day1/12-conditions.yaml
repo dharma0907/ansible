@@ -2,7 +2,7 @@
   hosts: frontend
   gather_facts: yes
   vars:
-    a: 10
+    a: 100
     b: 20
   tasks:
   - name: print the message
