@@ -1,10 +1,10 @@
 - name: pfreference of variables
   hosts: frontend
   gather_facts: yes
-  # vars:
-  #   name: "ansible from play level"
+  vars:
+    name: "ansible from play level"
   vars_files:
-    - course.yaml
+  - course.yaml
   # vars_prompt:
   # - name: "name"
   #   prompt: "Please enter your name"
