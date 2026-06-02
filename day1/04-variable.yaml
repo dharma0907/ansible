@@ -1,0 +1,13 @@
+- name: different variables
+  hosts: frontend
+  become: yes
+  gather_facts: no
+  vars:
+    name: "dharma"
+    address: "satya nagar, bhubaneswar"
+  tasks:
+  - name: print the message
+    vars:
+      course: "ansible"
+    debug:
+      msg: "Hello, my name is {{ name }} and I am learning {{ course }}"

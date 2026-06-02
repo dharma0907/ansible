@@ -1,6 +1,10 @@
-{
-    "firstname": "",
-    "lastname": "",
+{  
+    "students": [
+       {
+           "firstname": "",
+           "lastname": ""
+       }
+    ],
     "address": [
         {
             "street": "",
