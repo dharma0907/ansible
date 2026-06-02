@@ -1,0 +1,19 @@
+- name: condition 
+  hosts: frontend
+  gather_facts: yes
+  vars:
+    a: 10
+    b: 20
+  tasks:
+  - name: print the message
+    debug:
+      msg: "a is greater than b"
+    when: a > b
+  - name: print the message
+    debug:
+      msg: "a is less than b"
+    when: a < b
+  - name: print the message
+    debug:
+      msg: "a is equal to b"
+    when: a == b
