@@ -1,4 +1,4 @@
-- name: checking preference of vars
+- name: pfreference of variables
   hosts: frontend
   gather_facts: yes
   vars:
