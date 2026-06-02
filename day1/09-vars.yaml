@@ -3,7 +3,7 @@
   gather_facts: yes
   vars:
     name: "ansible from play level"
-  vars-files:
+  vars_files:
     - course.yaml
   vars_prompt:
   - name: "name"
