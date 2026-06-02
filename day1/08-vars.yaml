@@ -5,3 +5,5 @@
   - name: print the message
     debug:
       msg: "Hello {{ name }}"
+
+# sudo ansible-playbook -i inventory.ini -e "name=dharma" 08-vars.yaml
