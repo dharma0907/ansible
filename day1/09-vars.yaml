@@ -11,10 +11,11 @@
   
   tasks:
   - name: print preference of variables
-    vars:
-      name: "ansible from task level variable"
+    # vars:
+    #   name: "ansible from task level variable"
     debug:
       msg: "The name is {{ name }}"
 
 # first preference command line args
-# second task
+# second task, when no args passed then if you define in vars in task level then this will be preference 
+
