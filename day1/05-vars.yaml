@@ -1,0 +1,10 @@
+- name: demo on vars file
+  hosts: frontend
+  gather_facts: no
+  # here we are defining play level variables using vars_files
+  vars_files:
+    - course.yaml                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  tasks:
+  - name: print the message
+    debug:
+      msg: "Hello, I am learning {{ course }} and my trainer is {{ trainer }}. The duration of the course is {{ duration }}"
