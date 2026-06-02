@@ -1,0 +1,16 @@
+- name: data types
+  hosts: frontend
+  gather_facts: no
+  vars:
+    name: "Dharma"
+    time: 10
+    price: 100.50
+    is_valid: true
+    items: ["linux", "ubunutu", "devops"]
+    maps:
+      key1: "value1"
+      key2: "value2"
+  tasks:
+  - name: print the message
+    debug:
+      msg: "want to everthing on new line \n name: {{ name }} \n time: {{ time }} \n price: {{ price }} \n is_valid: {{ is_valid }} \n items: {{ items }} \n maps: {{ maps }}  "
