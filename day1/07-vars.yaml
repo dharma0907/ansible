@@ -6,3 +6,7 @@
   - name: print the message
     debug:
       msg: "Hello, I am learning {{ course }} and my trainer is {{ trainer }}. The duration of the course is {{ duration }}"
+
+  - name: print the common value
+    debug:
+      msg: "The common value is {{ common_value }} and the common key is {{ common_key }}"
