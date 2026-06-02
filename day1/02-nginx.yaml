@@ -1,6 +1,6 @@
 - name: ping the server
   hosts: frontend # nothing but target server
-  gather_facts: no
+  gather_facts: yes # to gather the information about the server
   tasks: 
 
   #now we will try to install install nginx on the server

@@ -1,4 +1,4 @@
-- name: demo on variables
+- name: demo on play level variables
   hosts: frontend
   gather_facts: no
   vars:
