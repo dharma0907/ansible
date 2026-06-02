@@ -2,12 +2,15 @@
   hosts: frontend
   become: yes
   gather_facts: no
+  # these are play level variables
   vars:
     name: "dharma"
     address: "satya nagar, bhubaneswar"
   tasks:
   - name: print the message
+  # here we are defining task level variables
     vars:
       course: "ansible"
+      name: "akandam"
     debug:
       msg: "Hello, my name is {{ name }} and I am learning {{ course }}"
