@@ -1,0 +1,8 @@
+# here we are calling varibles form inventory file, host spacific variables
+- name: demo on inventory file variables
+  hosts: frontend
+  gather_facts: no
+  tasks:
+  - name: print the message
+    debug:
+      msg: "Hello, I am learning {{ course }} and my trainer is {{ trainer }}. The duration of the course is {{ duration }}"
