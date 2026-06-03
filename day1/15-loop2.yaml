@@ -1,0 +1,13 @@
+# to install packages
+- name: install packages
+  hosts: frontend
+  gather_facts: yes
+  become: yes
+  tasks:
+  - name: install httpd package
+    package:
+      name: "{{ item }}"
+      state: present
+    loop:
+    - httpd
+    - vim
