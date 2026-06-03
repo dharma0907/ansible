@@ -1,0 +1,14 @@
+- name: to check condition 
+  hosts: frontend
+  gather_facts: yes
+  vars:
+    a: 100
+  tasks:
+  - name: checking number is even or odd
+    debug:
+      msg: "a is even number"
+    when: a % 2 == 0
+  - name: not divided by 2
+    debug:
+      msg: "a is odd number"
+    when: a % 2 != 0

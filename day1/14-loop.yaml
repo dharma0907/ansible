@@ -1,0 +1,15 @@
+# loops are refer with a special variable called "item"
+# we can use "with_items" to loop over a list of items
+
+- name: loops 
+  hosts: frontend
+  gather_facts: no
+  loop:
+  - dharma
+  - akandam
+  - devops
+  tasks:
+  - name: loop over a list of items
+    debug:
+      msg: "item is {{ item }}"
+    with_items: "{{ mylist }}"
