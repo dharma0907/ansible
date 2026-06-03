@@ -1,4 +1,4 @@
-- name: loops 
+- name: loop concept to test the loop concept
   hosts: frontend
   gather_facts: no
   loop:
