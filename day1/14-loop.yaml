@@ -2,9 +2,9 @@
   hosts: frontend
   gather_facts: no
   loop:
-  - dharma
-  - akandam
-  - devops
+   - dharma
+   - akandam
+   - devops
 # loops are refer with a special variable called "item"
 # we can use "with_items" to loop over a list of items
   tasks:
