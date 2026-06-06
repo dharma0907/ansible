@@ -9,3 +9,12 @@
   - name: print the result
     debug:
       var: result
+  
+  - name: create user
+    command: useradd roboshop
+    register: user
+    when: result.rc != 0
+  
+  - name: print the user creation result
+    debug:
+      var: user
