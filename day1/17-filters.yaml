@@ -4,11 +4,36 @@
   gather_facts: no
   vars:
     my_string:  dharma,akandam,devops
+  tagmap:
+    - name: dharma
+      tags: tadepalligudem
+    - name: chintu
+      tags: vizag
+    - name: mahi
+      tags: guttiga
+  Name: dharMa AKandam
     
   tasks:
   - name: convert string to list using split filter
     debug:
       msg: "{{ my_string | split(',') }}"
   
-  - name: convert list to map using listTOmap filter
+  - name: default variable
+    debug:
+      msg: {{ akandam | default('devops') }}
+
+  - name: map to list
+    debug:
+      msg: "{{ tagmap | dict2items }}"
+
+  - name: list to map
+    debug:
+      msg: "{{ tagmap | items2dict }}"
+
+  - name: uppercase
+    debug:
+      msg: "{{ Name | upper }}"
+  - name: lowercase
+    debug:
+      msg: "{{ Name | lower }}"
    
