@@ -1,1 +1,6 @@
-- name: error handling
+- name: demo on error handling
+  hosts: local
+  gather_facts: no
+  tasks:
+  - name: demo on errors
+    command: id roboshop  
