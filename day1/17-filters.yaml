@@ -5,13 +5,10 @@
   gather_facts: no
   vars:
     my_string:  dharma,akandam,devops
-    tagmap:
-    - name: dharma
-      tags: tadepalligudem
-    - proj: chintu
-      tags: vizag
-    - place: mahi
-      tags: guttiga
+    tagMap:
+      name: Ansible
+      project: roboshop
+      environment: dev
     Name: dharMa AKandam
     
   tasks:
