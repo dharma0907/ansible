@@ -1,5 +1,5 @@
 # ansible allows to run commands if modules are not available. This is not recommended but it is possible. We can use the raw module to run commands on remote hosts. The raw module does not require python to be installed on the remote host.
-- name: commands
+- name: commands to run on remote hosts
   hosts: frontend
   gather_facts: no
   tasks:
