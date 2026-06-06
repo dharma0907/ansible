@@ -5,14 +5,14 @@
   gather_facts: no
   vars:
     my_string:  dharma,akandam,devops
-  tagmap:
+    tagmap:
     - name: dharma
       tags: tadepalligudem
-    - name: chintu
+    - proj: chintu
       tags: vizag
-    - name: mahi
+    - place: mahi
       tags: guttiga
-  Name: dharMa AKandam
+    Name: dharMa AKandam
     
   tasks:
   - name: convert string to list using split filter
