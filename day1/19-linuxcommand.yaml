@@ -10,5 +10,6 @@
   - name: to store output of command in a variable
     shell: cat /etc/passwd | grep root
     register: output
+  - name: print the output 
     debug:
       masg: "{{ output.stdout }}"
