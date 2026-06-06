@@ -20,7 +20,7 @@
   
   - name: default variable
     debug:
-      msg: {{ akandam | default('devops') }}
+      msg: "{{ akandam | default('devops') }}"
 
   - name: map to list
     debug:
