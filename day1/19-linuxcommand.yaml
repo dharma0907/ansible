@@ -4,5 +4,9 @@
   gather_facts: no
   tasks:
   - name: run a command
-    command: cat /ect/passwd | grep root
-    #shell: cat /etc/passwd | grep root
+    #command: cat /ect/passwd | grep root #will get error because of we are trying shell command in command module
+    shell: cat /etc/passwd | grep root
+
+  - name: to store output of command in a variable
+    shell: cat /etc/passwd | grep root
+    register: output
