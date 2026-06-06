@@ -22,11 +22,11 @@
 
   - name: map to list
     debug:
-      msg: "{{ tagmap | dict2items }}"
+      msg: "{{ tagMap | dict2items }}"
 
   - name: list to map
     debug:
-      msg: "{{ tagmap | items2dict }}"
+      msg: "{{ tagMap | items2dict }}"
 
   - name: uppercase
     debug:
