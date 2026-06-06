@@ -30,7 +30,7 @@
 
   - name: list to map
     debug:
-      msg: "{{ tagMap | items2dict }}"
+      msg: "{{ tagList | items2dict }}"
 
   - name: uppercase
     debug:
