@@ -3,4 +3,9 @@
   gather_facts: no
   tasks:
   - name: demo on errors
-    command: id roboshop  
+    command: id roboshop
+    register: result
+    ignore_errors: yes
+  - name: print the result
+    debug:
+      var: result
