@@ -4,4 +4,5 @@
   gather_facts: no
   tasks:
   - name: run a command
-    command: cat /ect/passwd | grep root
+    #command: cat /ect/passwd | grep root
+    shell: cat /etc/passwd | grep root
