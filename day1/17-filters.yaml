@@ -10,10 +10,20 @@
       project: roboshop
       environment: dev
     Name: dharMa AKandam
-    taglist:
-      - name: Ansible
-      - project: roboshop
-      - environment: dev
+    tagsList: [
+        {
+            "key": "name",
+            "value": "Ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "environment",
+            "value": "dev"
+        }
+    ]
     
   tasks:
   - name: convert string to list using split filter
@@ -30,7 +40,7 @@
 
   - name: list to map
     debug:
-      msg: "{{ tagList | items2dict }}"
+      msg: "{{ tagsList | items2dict }}"
 
   - name: uppercase
     debug:
