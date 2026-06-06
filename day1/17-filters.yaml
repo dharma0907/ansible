@@ -1,5 +1,6 @@
 # filters, we can convert string to list using split filter
 # functions, listTOmap, mapTOlist
+- name: filters
   hosts: frontend
   gather_facts: no
   vars:
