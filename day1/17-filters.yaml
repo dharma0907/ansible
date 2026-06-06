@@ -1,6 +1,6 @@
 # filters, we can convert string to list using split filter
 # functions, listTOmap, mapTOlist
-  hosts: local
+  hosts: frontend
   gather_facts: no
   vars:
     my_string:  dharma,akandam,devops
